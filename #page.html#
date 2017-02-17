@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wow</title>
+  </head>
+  <body>
+
+    <center>
+      <canvas id="slate" width="500" height="500" style="border: 2px solid black;"></canvas>
+      <br>
+      <input type="button" value="Cicle" id="circButton"> 
+      <input type="button" value="DVD" id="dvdButton">
+      <input type="button" value="">
+    
+  </body>  
+</html>
