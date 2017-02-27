@@ -2,6 +2,9 @@ var c = document.getElementById("slate");
 var ctx = c.getContext('2d')
 ctx.fillStyle = '#cc99ff'
 
+var img = new Image();
+img.src = "dvd.jpg"
+
 var rid;
 
 var animateCircle = function(){
@@ -36,7 +39,8 @@ var animateShape = function(){
     var drawShape = function(){
         ctx.clearRect( 0, 0, c.width, c.height);
         ctx.beginPath();
-        ctx.fillRect( x, y, 100, 50 );
+        //ctx.fillRect( x, y, 100, 50 );
+        ctx.drawImage( img, x, y, 100, 50 );
         ctx.fill();
         if( x <= 0 || x + 100>= c.width){
             changeX *= -1;
